@@ -1,7 +1,8 @@
 
  * {
  	box-sizing: border-box;
- 	background: #eee0e1
+ 	background: #eee0e1;
+  font-family: 'PT Sans', sans-serif;
     }
 body {
   font-size: 18px;
@@ -13,10 +14,10 @@ body {
        
        margin: 10px;
        background: #e4ab90;
-       margin: 0 auto;
+       
        overflow: hidden;
        padding: 0;
-      
+       
   }
   header {
   	 text-align: center;
@@ -32,10 +33,9 @@ body {
   #left {
   	float: left;
     width: 600px;
-    
-    font-size: 15px
-  	
-  	background: #7dcad5;
+    padding: 50px;
+    font-size: 18px;
+  	padding: 50px;
     }
   
   #right {
@@ -48,16 +48,30 @@ body {
      padding: 2px;
      border: 2px solid #eee;
   }
+
+  #left2 {
+      float: left;
+    width: 600px;
+    padding: 50px;
+    font-size: 18px;
+  }
   #contact {
     font-size: 15px;
     float: left;
     width: 600px;
+
   }
+ 
+ a:link { 
+  color: blue;
+ }
+ a:hover { color: red; }
+ 
+
 
   footer {
-      position:absolute;
-      bottom:0;
-      width:100%;
+      
+      
       height:60px;   
       width: 980px;
       text-align: center;
