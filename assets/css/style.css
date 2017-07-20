@@ -2,7 +2,7 @@
  * {
  	box-sizing: border-box;
  	background: #eee0e1;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     }
 body {
   font-size: 18px;
@@ -20,14 +20,14 @@ body {
        
   }
   header {
+     font-family: 'Georgia', Times, serif;
   	 text-align: center;
   	 margin: 20px;
-  	 
-  	  }
+  	 }
 
   h1 {
   	  color: #2d0d3c;
-      background: #be192d; 
+      background: #f37d8b; 
       text-align: center;s
     }
   #left {
