@@ -21,10 +21,6 @@ $email_subject = "Website Contact Form:  $name";
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
 $headers = "From: postmaster@sandboxe0d236096ec940a7880cf27f9daf2d8c.mailgun.org\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";	
-$mail=mail($to, "Subject: $email_subject",$message );
-if($mail){
-echo "Thank you for using our mail form";
-}else{
-echo "Mail sending failed."; 
-}			
+@mail($to, $email_subject, $email_message, $headers);  
+return true;			
 ?>
