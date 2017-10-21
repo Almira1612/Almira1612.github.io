@@ -48,6 +48,6 @@ app.get('/send',function(req,res){
 });
 });
 
-app.listen(3000,function(){
-	console.log("Express Started on Port 3000");
+app.listen(process.env.PORT || 8080 ,function(){
+    console.log("up and running on port "+ process.env.PORT);
 });
